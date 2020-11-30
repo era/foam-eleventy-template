@@ -11,6 +11,7 @@ module.exports = (eleventyConfig) => {
 
   let markdownIt = require("markdown-it");
   let markdownItReplaceLink = require("markdown-it-replace-link");
+  let taskLists = require('markdown-it-task-lists');
   let markdownItOptions = {
     html: true,
     linkify: true,
@@ -32,7 +33,9 @@ module.exports = (eleventyConfig) => {
       return link;
     },
   };
-  let markdownLib = markdownIt(markdownItOptions).use(markdownItReplaceLink);
+  let markdownLib = markdownIt(markdownItOptions)
+    .use(markdownItReplaceLink)
+    .use(taskLists);
   eleventyConfig.setLibrary("md", markdownLib);
 
   return {
