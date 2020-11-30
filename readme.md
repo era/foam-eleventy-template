@@ -27,15 +27,6 @@ We've created a few Bubbles (markdown documents) to get you started.
 - [[foam-tips]] - tips to get the most out of your Foam workspace
 - [[todo]] - a place to keep track of things to do
 
-## Note about organisation
-
-[I](https://www.elias.sh) don't really like to have both the static site generator settings and my personal notes on the same git repository. It basically means that I cannot render my notes in any way I want or test things out without the danger of deleting by mistake a personal note instead of a configuration file. That's why this fork only render things inside `bubbles` folder. That way you can basically keep your notes in a different repository and add the submodule as in:
-
-```
-rm -rf bubbles
-git submodule add <remote_url> bubbles
-```
-
 ## Note on `[[wiki-links]]`
 
 ⚠️ Until [foambubble/foam#16](https://github.com/foambubble/foam/issues/16) is resolved, `[[wiki-links]]` links (like the links above) won't work in the GitHub Markdown preview (i.e. this Readme on github.com).
