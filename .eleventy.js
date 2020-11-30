@@ -13,6 +13,7 @@ module.exports = (eleventyConfig) => {
   let markdownItReplaceLink = require("markdown-it-replace-link");
   let markdownItOptions = {
     html: true,
+    linkify: true,
     replaceLink: function (link, env) {
       const isRelativePattern = /^(?!http|\/).*/;
       const lastSegmentPattern = /[^\/]+(?=\/$|$)/i;
