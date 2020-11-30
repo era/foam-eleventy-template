@@ -37,7 +37,7 @@ module.exports = (eleventyConfig) => {
 
   return {
     dir: {
-      input: ".",
+      input: "bubbles",
       output: "_site",
       includes: "_includes",
       layouts: "_layouts",

@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "template to create a foam workspace with eleventy",
   "scripts": {
-    "start": "eleventy --serve --watch",
+    "start": "npx eleventy --serve --watch",
     "clean": "rm -rf ./_site",
-    "build": "npm run clean && eleventy",
-    "debug": "DEBUG=* eleventy"
+    "build": "npm run clean && npx eleventy",
+    "debug": "DEBUG=* npx eleventy"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,11 @@
       "name": "Omar López",
       "email": "zomars@me.com",
       "url": "https://zoma.rs"
+    },
+    {
+      "name": "Elias Granja",
+      "email": "me@elias.sh",
+      "url": "https://elias.sh"
     }
   ],
   "license": "ISC",
